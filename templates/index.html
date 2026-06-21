@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Neural Chat</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}" />
+</head>
+<body>
+  <div class="app">
+    <header class="app-header">
+      <div class="node-mark" aria-hidden="true">
+        <span class="node n1"></span>
+        <span class="node n2"></span>
+        <span class="node n3"></span>
+      </div>
+      <div class="header-text">
+        <h1>Neural Chat</h1>
+        <p class="subtitle">A small intent-classifier, talking</p>
+      </div>
+    </header>
+
+    <main class="chat-window" id="chat-window" aria-live="polite">
+      <div class="message bot">
+        <div class="bubble">Hi! I'm running on a trained intent model. Ask me something.</div>
+      </div>
+    </main>
+
+    <form class="composer" id="composer">
+      <input
+        type="text"
+        id="message-input"
+        placeholder="Type a message…"
+        autocomplete="off"
+        aria-label="Message"
+      />
+      <button type="submit" id="send-btn" aria-label="Send message">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <path d="M5 12h14M13 6l6 6-6 6" stroke-linecap="round" stroke-linejoin="round" />
+        </svg>
+      </button>
+    </form>
+  </div>
+
+  <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
