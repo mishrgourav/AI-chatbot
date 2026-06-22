@@ -1,5 +1,5 @@
 # Neural Chat — Free Edition (powered by Google Gemini)
-
+https://ai-chatbot-hhr5.onrender.com/
 This version uses Google's Gemini API, which has a genuinely free tier —
 no credit card required. Good for personal projects and learning.
 
